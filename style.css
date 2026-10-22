@@ -1,0 +1,40 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aqua;
+    padding: 30px;
+}
+h1{
+    color: blue;
+}
+form{
+    background-color: white;
+    padding: 30px;
+    width:300px;
+}
+input,select{
+    padding: 10px;
+    margin-top: 5px;
+}
+button{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: darkgreen;
+    transition:translate(0.5s);
+}
+button:hover{
+    transform:scale(1.05);
+    background-color: blueviolet;
+    cursor: pointer;
+}
+li{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+#message{
+    color:red;
+}
+#warning{
+    color:red;
+}

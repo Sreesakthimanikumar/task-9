@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+    <h1>Spendsmart</h1>
+    <p>Pesonal Expense Tracker</p>
+   <h2>Add Expense</h2> 
+   <form id="form">
+   <label>Expense Name:</label>
+   <input type="text" id="name"placeholder="Enter expense Name"><br><br>
+   <label>Amount(&#8377;):</label>
+   <input tupe="number"id="amount"placeholder="Enter amount"><br><br>
+   <label>Category:</label>
+   <select id="category">
+   <option value="">Select Category</option>
+   <option value="Food">Food</option>
+   <option value="Travel">Travel</option>
+   <option value="Shopping">Shopping</option>
+   <option value="other">other</option>1
+   </select><br><br>
+   <label>Date:</label>
+   <input type="date"id="date"><br><br>
+   <button type="Submit">Add Expense</button>
+   </form>
+   <p id="message"></p>
+   <h2>Monthly Budget</h2>
+   <input type="number"id="budget"placeholder="Enter Monthly Budget">
+   <button id="savebudget">Save Budget</button>
+    <h3>Total spending:&#8377;<span id="total">0</span></h3>
+    <h3>Monthly Bugdet:&#8377;<span id="budgetdispaly"></span></h3>
+    <h3>Remaining Budget:&#8377;<span id="remaining"></span></h3>
+    <p id="warning"></p>
+    <h2>Category-wise spending</h2>
+    <p>Food:&#8377;<span id="foodtotal">0</span></p>
+    <p>Travel:&#8377;<span id="traveltotal">0</span></p>
+    <p>Shopping:&#8377;<span id="shoppingtotal">0</span></p>
+    <p>Other:&#8377;<span id="othertotal">0</span></p>
+    <ul id="expenseList"></ul>
+    <script src="script.js"></script>
+</body>
+</html>
